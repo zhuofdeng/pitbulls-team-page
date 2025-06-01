@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: 10, 36, 99; /* #0A2463 Navy blue */
+  --color-secondary: 176, 46, 12; /* #B02E0C Red */
+  --color-accent: 242, 170, 76; /* #F2AA4C Gold */
+  --color-success: 34, 197, 94; /* #22C55E Green */
+  --color-warning: 234, 179, 8; /* #EAB308 Yellow */
+  --color-error: 220, 38, 38; /* #DC2626 Red */
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  @apply text-gray-800 bg-gray-50;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(20px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.animate-slideInRight {
+  animation: slideInRight 0.3s ease-out;
+}
+
+/* Custom components */
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-md font-semibold transition-all duration-200;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-600 text-white hover:bg-primary-700;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary-600 text-white hover:bg-secondary-700;
+  }
+  
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg;
+  }
+
+  .heading-xl {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold;
+  }
+
+  .heading-lg {
+    @apply text-2xl md:text-3xl font-bold;
+  }
+
+  .heading-md {
+    @apply text-xl md:text-2xl font-semibold;
+  }
+
+  .heading-sm {
+    @apply text-lg md:text-xl font-semibold;
+  }
+
+  .full-iframe {
+    width: 100%;
+    height: 400px;
+    iframe {
+      width: inherit;
+      height: inherit;
+    }
+  }
+}

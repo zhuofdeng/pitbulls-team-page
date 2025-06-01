@@ -1,0 +1,145 @@
+[
+  {
+    "id": "1",
+    "date": "2025-04-10",
+    "time": "5:30 PM",
+    "opponent": "Hurricanes",
+    "location": "KB2 Field",
+    "locationLink": "https://maps.app.goo.gl/n7qMCtS4repBuFXs9",
+    "isHome": false,
+    "result": "loss",
+    "score": {"team": 3, "opponent": 10}
+  },
+  {
+    "id": "2",
+    "date": "2025-04-27",
+    "time": "11:00 AM",
+    "opponent": "Hurricanes",
+    "location": "KB1 field",
+    "locationLink": "https://maps.app.goo.gl/n7qMCtS4repBuFXs9",
+    "isHome": true,
+    "result": "loss",
+    "score": {"team": 5, "opponent": 11}
+  },
+  {
+    "id": "3",
+    "date": "2025-04-28",
+    "time": "6:00 PM",
+    "opponent": "Cobras",
+    "location": "KB1 field",
+    "locationLink": "https://maps.app.goo.gl/n7qMCtS4repBuFXs9",
+    "isHome": true,
+    "result": "win",
+    "score": {"team": 4, "opponent": 1}
+  },
+  {
+    "id": "4",
+    "date": "2025-05-01",
+    "time": "6:00 PM",
+    "opponent": "Saint Columba",
+    "location": "Joe Torre <3802 Avenue U>",
+    "locationLink": "https://maps.app.goo.gl/GxDWkE6AdoS9xHWX7",
+    "isHome": false,
+    "result": "loss",
+    "score": {"team": 2, "opponent": 12}
+  },
+  {
+    "id": "5",
+    "date": "2025-05-05",
+    "time": "6:00 PM",
+    "opponent": "BT James",
+    "location": "KB1 field",
+    "locationLink": "https://maps.app.goo.gl/n7qMCtS4repBuFXs9",
+    "isHome": true,
+    "result": "postponed",
+    "score": null
+  },
+  {
+    "id": "6",
+    "date": "2025-05-11",
+    "time": "11:00 AM",
+    "opponent": "SCC Cyclones",
+    "location": "KB1 field",
+    "locationLink": "https://maps.app.goo.gl/n7qMCtS4repBuFXs9",
+    "isHome": true,
+    "result": "loss",
+    "score": {"team": 0, "opponent": 9}
+  },
+  {
+    "id": "7",
+    "date": "2025-05-13",
+    "time": "6:00 PM",
+    "opponent": "BT Bobby",
+    "location": "KB1 field",
+    "locationLink": "https://maps.app.goo.gl/n7qMCtS4repBuFXs9",
+    "isHome": true,
+    "result": "win",
+    "score": {"team": 8, "opponent": 7}
+  },
+  {
+    "id": "8",
+    "date": "2025-05-20",
+    "time": "6:00 PM",
+    "opponent": "BBYO Frank",
+    "location": "Bergen Beach <2335 Bergen Ave>",
+    "locationLink": "https://maps.app.goo.gl/rudSRGg8Kz6Fn3ea7",
+    "isHome": false,
+    "result": "loss",
+    "score": {"team": 4, "opponent": 8}
+  },
+  {
+    "id": "9",
+    "date": "2025-06-05",
+    "time": "6:00 PM",
+    "opponent": "BBYO Matt",
+    "location": "KB1 field",
+    "locationLink": "https://maps.app.goo.gl/n7qMCtS4repBuFXs9",
+    "isHome": true,
+    "result": null,
+    "score": null
+  },
+  {
+    "id": "10",
+    "date": "2025-05-29",
+    "time": "6:00 PM",
+    "opponent": "GB Mike",
+    "location": "Larry Veling Field <2901 Gerritsen Ave>",
+    "locationLink": "https://maps.app.goo.gl/pZZ9NEVWw2fN6TpF9",
+    "isHome": false,
+    "result": "loss",
+    "score": {"team": 0, "opponent": 7}
+  },
+  {
+    "id": "11",
+    "date": "2025-06-09",
+    "time": "6:00 PM",
+    "opponent": "BT Bobby",
+    "location": "Breezy Point <1600 Boardwalk>",
+    "locationLink": "https://maps.app.goo.gl/6YpW8sk3HFkabQSc6",
+    "isHome": true,
+    "result": null,
+    "score": null
+  },
+  {
+    "id": "12",
+    "date": "2025-06-12",
+    "time": "6:00 PM",
+    "opponent": "SCC Cyclones",
+    "location": "KB 1 field",
+    "locationLink": "https://maps.app.goo.gl/n7qMCtS4repBuFXs9",
+    "isHome": true,
+    "result": null,
+    "score": null
+  },
+  {
+    "id": "13",
+    "date": "2025-06-15",
+    "time": "1:30 PM",
+    "opponent": "BBYO Matt",
+    "location": "Bergen Beach <2335 Bergen Ave>",
+    "locationLink": "https://maps.app.goo.gl/rudSRGg8Kz6Fn3ea7",
+    "isHome": true,
+    "result": null,
+    "score": null
+  }
+]
