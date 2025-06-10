@@ -95,8 +95,8 @@
     "location": "KB1 field",
     "locationLink": "https://maps.app.goo.gl/n7qMCtS4repBuFXs9",
     "isHome": true,
-    "result": null,
-    "score": null
+    "result": "loss",
+    "score": {"team": 6, "opponent": 7}
   },
   {
     "id": "10",
@@ -116,9 +116,9 @@
     "opponent": "BT Bobby",
     "location": "Breezy Point <1600 Boardwalk>",
     "locationLink": "https://maps.app.goo.gl/6YpW8sk3HFkabQSc6",
-    "isHome": true,
-    "result": null,
-    "score": null
+    "isHome": false,
+    "result": "win",
+    "score": {"team": 11, "opponent": 5}
   },
   {
     "id": "12",
@@ -138,7 +138,7 @@
     "opponent": "BBYO Matt",
     "location": "Bergen Beach <2335 Bergen Ave>",
     "locationLink": "https://maps.app.goo.gl/rudSRGg8Kz6Fn3ea7",
-    "isHome": true,
+    "isHome": false,
     "result": null,
     "score": null
   }

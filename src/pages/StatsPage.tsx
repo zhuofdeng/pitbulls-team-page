@@ -94,16 +94,17 @@ const StatsPage: React.FC = () => {
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-x-4 gap-y-2">
                   <div><strong>AB</strong>: At Bats</div>
                   <div><strong>H</strong>: Hits</div>
+                  <div><strong>1B</strong>: Singles</div>
                   <div><strong>2B</strong>: Doubles</div>
                   <div><strong>3B</strong>: Triples</div>
                   <div><strong>HR</strong>: Home Runs</div>
-                  <div><strong>R</strong>: Runs</div>
+                  <div><strong>R</strong>: Runs Scored</div>
                   <div><strong>RBI</strong>: Runs Batted In</div>
-                  <div><strong>SB</strong>: Stolen Bases</div>
                   <div><strong>BB</strong>: Walks</div>
-                  <div><strong>SO</strong>: Strikeouts</div>
                   <div><strong>AVG</strong>: Batting Average</div>
+                  <div><strong>OPS</strong>: On Base Percentage</div>
                   <div><strong>IP</strong>: Innings Pitched</div>
+                  <div><strong>SO</strong>: Strikeouts</div>
                   <div><strong>ERA</strong>: Earned Run Average</div>
                   <div><strong>HIT</strong>: Hits Allowed</div>
                   <div><strong>ER</strong>: Earned Runs</div>
