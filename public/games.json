@@ -128,8 +128,8 @@
     "location": "KB 1 field",
     "locationLink": "https://maps.app.goo.gl/n7qMCtS4repBuFXs9",
     "isHome": true,
-    "result": null,
-    "score": null
+    "result": "loss",
+    "score": {"team": 0, "opponent": 12}
   },
   {
     "id": "13",
