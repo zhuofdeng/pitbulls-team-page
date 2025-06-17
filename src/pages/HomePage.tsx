@@ -76,9 +76,16 @@ const HomePage: React.FC = () => {
                 <h3 className="heading-sm text-primary-800 mb-4">Announcements</h3>
                 <div className="space-y-4">
                   <div className="p-3 border-l-4 border-primary-500 bg-primary-50">
-                    <p className="font-medium text-gray-800">Team Photos</p>
+                    <p className="font-medium text-gray-800">Kings Bay Award Ceremony</p>
                     <p className="text-sm text-gray-600">
-                      Team photos will be taken  on June 8th. Time will be announced soon.
+                      June 29th, 2025 12PM - 3PM at the Field- Join us for the annual Kings Bay Award Ceremony to celebrate our players' achievements!
+                    </p>
+                  </div>
+
+                  <div className="p-3 border-l-4 border-primary-500 bg-primary-50">
+                    <p className="font-medium text-gray-800">Playoffs</p>
+                    <p className="text-sm text-gray-600">
+                      Game 1 - June 18th 2025 at 6PM.
                     </p>
                   </div>
                 </div>

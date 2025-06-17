@@ -139,6 +139,17 @@
     "location": "Bergen Beach <2335 Bergen Ave>",
     "locationLink": "https://maps.app.goo.gl/rudSRGg8Kz6Fn3ea7",
     "isHome": false,
+    "result": "postponed",
+    "score": null
+  },
+  {
+    "id": "14",
+    "date": "2025-06-18",
+    "time": "06:00 PM",
+    "opponent": "BBYO Matt",
+    "location": "KB2 field",
+    "locationLink": "https://maps.app.goo.gl/n7qMCtS4repBuFXs9",
+    "isHome": true,
     "result": null,
     "score": null
   }
