@@ -1,19 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Baseline as Baseball, Calendar, TrendingUp } from 'lucide-react';
+import { Calendar, TrendingUp } from 'lucide-react';
 import { useTeam } from '../context/TeamContext';
 import NextGameCard from '../components/home/NextGameCard';
+import Annoucements from '../components/home/Annoucements';
 
 const HomePage: React.FC = () => {
-  const { upcomingGame } = useTeam();
-  
+  const { upcomingGame, annoucements } = useTeam();
+
   return (
     <div className="animate-fadeIn">
       {/* Hero Section */}
       <section className="relative bg-primary-950 text-white">
-        <div 
+        <div
           className="absolute inset-0 opacity-20 bg-cover bg-center"
-          style={{ 
+          style={{
             backgroundImage: "url(/pitbull.jpg)",
             backgroundSize: "contain", // Change to fit the image
             backgroundRepeat: "repeat" // tile the image
@@ -36,7 +37,7 @@ const HomePage: React.FC = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Quick Links */}
       <section className="bg-white py-8">
         <div className="container-custom">
@@ -52,7 +53,7 @@ const HomePage: React.FC = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Main Content Section */}
       <section className="py-12 bg-gray-50">
         <div className="container-custom">
@@ -60,7 +61,7 @@ const HomePage: React.FC = () => {
             {/* Left Column - Next Game */}
             <div className="space-y-6">
               <h2 className="heading-lg text-primary-800 border-b border-gray-200 pb-2">Upcoming Game</h2>
-              
+
               {upcomingGame ? (
                 <NextGameCard game={upcomingGame} />
               ) : (
@@ -69,28 +70,9 @@ const HomePage: React.FC = () => {
                 </div>
               )}
             </div>
-            
-            {/* Right Column - Stats & Announcements */}
-            <div className="space-y-6">
-              <div className="card p-6 bg-white">
-                <h3 className="heading-sm text-primary-800 mb-4">Announcements</h3>
-                <div className="space-y-4">
-                  <div className="p-3 border-l-4 border-primary-500 bg-primary-50">
-                    <p className="font-medium text-gray-800">Kings Bay Award Ceremony</p>
-                    <p className="text-sm text-gray-600">
-                      June 29th, 2025 12PM - 3PM at the Field- Join us for the annual Kings Bay Award Ceremony to celebrate our players' achievements!
-                    </p>
-                  </div>
 
-                  <div className="p-3 border-l-4 border-primary-500 bg-primary-50">
-                    <p className="font-medium text-gray-800">Playoffs</p>
-                    <p className="text-sm text-gray-600">
-                      Game 1 - June 18th 2025 at 6PM.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            {/* Right Column - Stats & Announcements */}
+            <Annoucements annoucements={annoucements} />
           </div>
         </div>
       </section>
@@ -100,16 +82,16 @@ const HomePage: React.FC = () => {
 
 // Component for MapPin since it wasn't imported at the top
 const MapPin = ({ size, className }: { size: number, className: string }) => (
-  <svg 
-    xmlns="http://www.w3.org/2000/svg" 
-    width={size} 
-    height={size} 
-    viewBox="0 0 24 24" 
-    fill="none" 
-    stroke="currentColor" 
-    strokeWidth="2" 
-    strokeLinecap="round" 
-    strokeLinejoin="round" 
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
     className={className}
   >
     <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>

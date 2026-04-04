@@ -43,3 +43,9 @@ export interface TeamStats {
   totalHits: number;
   totalRBI: number;
 }
+
+export interface Announcement {
+  title: string;
+  date: string;
+  content: string;
+}

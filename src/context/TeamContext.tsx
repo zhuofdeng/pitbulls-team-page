@@ -1,10 +1,11 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { Game, Player, TeamStats } from '../types';
+import { Announcement, Game, Player, TeamStats } from '../types';
 import { sampleGames, samplePlayers, sampleTeamStats } from '../data/sampleData';
 import { getGameDateTime } from '../utils/gametime';
 
 interface TeamContextType {
   games: Game[];
+  annoucements: Announcement[]; // Define a proper type for announcements if needed
   players: Player[];
   teamStats: TeamStats;
   upcomingGame: Game | null;
@@ -38,11 +39,24 @@ const fetchGamesData = async (): Promise<Game[]> => {
   }));
 };
 
+// function to fetch annoucements
+const fetchAnnoucementsData = async (): Promise<Announcement[]> => {
+  const response = await fetch(`/annoucements.json?v=${Date.now()}`); // bust cache
+  const annoucementsData = await response.text();
+  const parsedAnnoucementsData: Announcement[] = JSON.parse(annoucementsData);
+
+  return parsedAnnoucementsData.map((annoucement: Announcement) => ({
+    title: annoucement.title,
+    date: annoucement.date,
+    content: annoucement.content,
+  }));
+};
+
 export const TeamProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [games, setGames] = useState<Game[]>(sampleGames);
   const [players, setPlayers] = useState<Player[]>(samplePlayers);
   const [teamStats, setTeamStats] = useState<TeamStats>(sampleTeamStats);
-
+  const [annoucements, setAnnoucements] = useState<Announcement[]>([]);
   const now = new Date();
   // Get the next upcoming game
   const upcomingGame = games
@@ -56,8 +70,8 @@ export const TeamProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   // Update an existing game
   const updateGame = (gameId: string, updatedGame: Partial<Game>) => {
-    setGames(prevGames => 
-      prevGames.map(game => 
+    setGames(prevGames =>
+      prevGames.map(game =>
         game.id === gameId ? { ...game, ...updatedGame } : game
       )
     );
@@ -70,14 +84,14 @@ export const TeamProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   // Update a player's stats
   const updatePlayerStats = (playerId: string, stats: Partial<Player['stats']>) => {
-    setPlayers(prevPlayers => 
-      prevPlayers.map(player => 
-        player.id === playerId 
-          ? { ...player, stats: { ...player.stats, ...stats } } 
+    setPlayers(prevPlayers =>
+      prevPlayers.map(player =>
+        player.id === playerId
+          ? { ...player, stats: { ...player.stats, ...stats } }
           : player
       )
     );
-    
+
     // Recalculate team stats when player stats change
     calculateTeamStats();
   };
@@ -88,7 +102,7 @@ export const TeamProvider: React.FC<{ children: React.ReactNode }> = ({ children
     const totalHits = players.reduce((sum, player) => sum + player.stats.hits, 0);
     const totalRuns = players.reduce((sum, player) => sum + player.stats.runs, 0);
     const totalRBI = players.reduce((sum, player) => sum + player.stats.rbi, 0);
-    
+
     setTeamStats({
       gamesPlayed: games.filter(game => (game.result && game.result !== 'postponed')).length,
       wins: games.filter(game => game.result === 'win').length,
@@ -105,8 +119,7 @@ export const TeamProvider: React.FC<{ children: React.ReactNode }> = ({ children
     calculateTeamStats();
   }, [games, players]);
 
-  useEffect
-  (() => {
+  useEffect(() => {
     fetchGamesData()
       .then(fetchedGames => {
         setGames(fetchedGames);
@@ -116,9 +129,20 @@ export const TeamProvider: React.FC<{ children: React.ReactNode }> = ({ children
       });
   }, []);
 
+  useEffect(() => {
+    fetchAnnoucementsData()
+      .then(fetchedAnnoucements => {
+        setAnnoucements(fetchedAnnoucements);
+      })
+      .catch(error => {
+        console.error('Error fetching annoucements data:', error);
+      });
+  }, []);
+
   return (
     <TeamContext.Provider value={{
       games,
+      annoucements,
       players,
       teamStats,
       upcomingGame,

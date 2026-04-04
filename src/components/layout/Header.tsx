@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Baseline as Baseball } from 'lucide-react';
+import { Menu, X, PawPrint } from 'lucide-react';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,7 +8,7 @@ const Header: React.FC = () => {
   const location = useLocation();
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-  
+
   // Close mobile menu when route changes
   useEffect(() => {
     setIsMenuOpen(false);
@@ -29,17 +29,16 @@ const Header: React.FC = () => {
   }, []);
 
   return (
-    <header 
-      className={`sticky top-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
-      }`}
+    <header
+      className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
+        }`}
     >
       <div className="container-custom py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <Baseball 
-              size={32} 
+            <PawPrint
+              size={32}
               className="text-primary-600"
               strokeWidth={1.5}
             />
@@ -50,28 +49,36 @@ const Header: React.FC = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link 
-              to="/" 
+            <Link
+              to="/"
               className={`font-medium transition-colors ${location.pathname === '/' ? 'text-primary-800 border-b-2 border-primary-600' : 'text-gray-600 hover:text-primary-700'}`}
             >
               Home
             </Link>
-            <Link 
-              to="/schedule" 
+            <Link
+              to="/schedule"
               className={`font-medium transition-colors ${location.pathname === '/schedule' ? 'text-primary-800 border-b-2 border-primary-600' : 'text-gray-600 hover:text-primary-700'}`}
             >
               Schedule
             </Link>
-            <Link 
-              to="/stats" 
+            <Link
+              to="/stats"
               className={`font-medium transition-colors ${location.pathname === '/stats' ? 'text-primary-800 border-b-2 border-primary-600' : 'text-gray-600 hover:text-primary-700'}`}
             >
               Stats
             </Link>
+            <a
+              href="/Rules_and_Goals.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium transition-colors text-gray-600 hover:text-primary-700"
+            >
+              Team Rules
+            </a>
           </nav>
 
           {/* Mobile Menu Button */}
-          <button 
+          <button
             className="md:hidden text-gray-700 hover:text-primary-600 transition-colors"
             onClick={toggleMenu}
             aria-label="Toggle menu"
@@ -84,24 +91,32 @@ const Header: React.FC = () => {
         {isMenuOpen && (
           <nav className="md:hidden py-4 animate-fadeIn">
             <div className="flex flex-col space-y-3">
-              <Link 
-                to="/" 
+              <Link
+                to="/"
                 className={`py-2 px-4 font-medium transition-colors ${location.pathname === '/' ? 'text-primary-800 bg-primary-50 rounded' : 'text-gray-600'}`}
               >
                 Home
               </Link>
-              <Link 
-                to="/schedule" 
+              <Link
+                to="/schedule"
                 className={`py-2 px-4 font-medium transition-colors ${location.pathname === '/schedule' ? 'text-primary-800 bg-primary-50 rounded' : 'text-gray-600'}`}
               >
                 Schedule
               </Link>
-              <Link 
-                to="/stats" 
+              <Link
+                to="/stats"
                 className={`py-2 px-4 font-medium transition-colors ${location.pathname === '/stats' ? 'text-primary-800 bg-primary-50 rounded' : 'text-gray-600'}`}
               >
                 Stats
               </Link>
+              <a
+                href="/Rules_and_Goals.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="py-2 px-4 font-medium transition-colors text-gray-600 hover:text-primary-700"
+              >
+                Team Rules
+              </a>
             </div>
           </nav>
         )}
