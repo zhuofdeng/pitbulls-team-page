@@ -1,1 +1,86 @@
-[]
+[
+    {
+        "id": "1",
+        "date": "2026-04-19",
+        "time": "1:00 PM",
+        "opponent": "Cobras",
+        "location": "KB1 Field",
+        "locationLink": "https://maps.app.goo.gl/n7qMCtS4repBuFXs9",
+        "isHome": true,
+        "result": null,
+        "score": {
+            "team": 0,
+            "opponent": 0
+        }
+    },
+    {
+        "id": "2",
+        "date": "2026-04-23",
+        "time": "06:00 PM",
+        "opponent": "BCAC Ernie",
+        "location": "KB2 field",
+        "locationLink": "https://maps.app.goo.gl/n7qMCtS4repBuFXs9",
+        "isHome": false,
+        "result": null,
+        "score": {
+            "team": 0,
+            "opponent": 0
+        }
+    },
+    {
+        "id": "3",
+        "date": "2026-04-27",
+        "time": "6:00 PM",
+        "opponent": "BT Dave",
+        "location": "Breezy Point <1600 Boardwalk>",
+        "locationLink": "https://maps.app.goo.gl/6YpW8sk3HFkabQSc6",
+        "isHome": true,
+        "result": null,
+        "score": {
+            "team": 0,
+            "opponent": 0
+        }
+    },
+    {
+        "id": "4",
+        "date": "2026-04-30",
+        "time": "6:00 PM",
+        "opponent": "SCC Cyclones",
+        "location": "Comer Field",
+        "locationLink": "https://maps.app.goo.gl/LGv2DqXwKJrZ1Z4z6",
+        "isHome": false,
+        "result": null,
+        "score": {
+            "team": 0,
+            "opponent": 0
+        }
+    },
+    {
+        "id": "5",
+        "date": "2026-05-04",
+        "time": "6:00 PM",
+        "opponent": "GB Rats",
+        "location": "Larry Veling Field <2901 Gerritsen Ave>",
+        "locationLink": "https://maps.app.goo.gl/pZZ9NEVWw2fN6TpF9",
+        "isHome": true,
+        "result": null,
+        "score": {
+            "team": 0,
+            "opponent": 0
+        }
+    },
+    {
+        "id": "6",
+        "date": "2026-05-07",
+        "time": "6:00 PM",
+        "opponent": "Saint Columba Crusaders",
+        "location": "KB2 field",
+        "locationLink": "https://maps.app.goo.gl/n7qMCtS4repBuFXs9",
+        "isHome": true,
+        "result": null,
+        "score": {
+            "team": 0,
+            "opponent": 0
+        }
+    }
+]
