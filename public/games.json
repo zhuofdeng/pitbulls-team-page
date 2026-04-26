@@ -21,10 +21,10 @@
         "location": "KB1 Field",
         "locationLink": "https://maps.app.goo.gl/n7qMCtS4repBuFXs9",
         "isHome": true,
-        "result": null,
+        "result": "win",
         "score": {
-            "team": 0,
-            "opponent": 0
+            "team": 7,
+            "opponent": 11
         }
     },
     {
