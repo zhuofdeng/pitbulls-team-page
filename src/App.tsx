@@ -5,6 +5,7 @@ import Footer from './components/layout/Footer';
 import HomePage from './pages/HomePage';
 import SchedulePage from './pages/SchedulePage';
 import StatsPage from './pages/StatsPage';
+import PhotosPage from './pages/PhotosPage';
 import { TeamProvider } from './context/TeamContext';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
               <Route path="/" element={<HomePage />} />
               <Route path="/schedule" element={<SchedulePage />} />
               <Route path="/stats" element={<StatsPage />} />
+              <Route path="/photos" element={<PhotosPage />} />
             </Routes>
           </main>
           <Footer />

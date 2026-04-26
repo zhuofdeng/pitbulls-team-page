@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Calendar, TrendingUp } from 'lucide-react';
+import { Calendar, TrendingUp, Image } from 'lucide-react';
 import { useTeam } from '../context/TeamContext';
 import NextGameCard from '../components/home/NextGameCard';
 import Annoucements from '../components/home/Annoucements';
@@ -49,6 +49,10 @@ const HomePage: React.FC = () => {
             <Link to="/stats" className="flex items-center p-4 border border-gray-200 rounded-lg hover:bg-primary-50 hover:border-primary-200 transition-colors">
               <TrendingUp size={24} className="text-primary-600 mr-3" />
               <span className="font-semibold">Team Stats</span>
+            </Link>
+            <Link to="/photos" className="flex items-center p-4 border border-gray-200 rounded-lg hover:bg-primary-50 hover:border-primary-200 transition-colors">
+              <Image size={24} className="text-primary-600 mr-3" />
+              <span className="font-semibold">Team Photos</span>
             </Link>
           </div>
         </div>

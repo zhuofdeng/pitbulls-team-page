@@ -67,6 +67,12 @@ const Header: React.FC = () => {
             >
               Stats
             </Link>
+            <Link
+              to="/photos"
+              className={`font-medium transition-colors ${location.pathname === '/photos' ? 'text-primary-800 border-b-2 border-primary-600' : 'text-gray-600 hover:text-primary-700'}`}
+            >
+              Photos
+            </Link>
             <a
               href="/Rules_and_Goals.pdf"
               target="_blank"
@@ -108,6 +114,12 @@ const Header: React.FC = () => {
                 className={`py-2 px-4 font-medium transition-colors ${location.pathname === '/stats' ? 'text-primary-800 bg-primary-50 rounded' : 'text-gray-600'}`}
               >
                 Stats
+              </Link>
+              <Link
+                to="/photos"
+                className={`py-2 px-4 font-medium transition-colors ${location.pathname === '/photos' ? 'text-primary-800 bg-primary-50 rounded' : 'text-gray-600'}`}
+              >
+                Photos
               </Link>
               <a
                 href="/Rules_and_Goals.pdf"
