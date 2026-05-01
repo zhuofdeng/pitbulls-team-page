@@ -16,6 +16,7 @@ const photos: Photo[] = [
   { src: '/photos/7769.JPG', caption: '' },
   { src: '/photos/7770.JPG', caption: '' },
   { src: '/photos/7771.JPG', caption: '' },
+  { src: '/photos/7776.JPG', caption: '' },
   { src: '/photos/IMG_3599.JPG', caption: '' },
   { src: '/photos/IMG_3600.JPG', caption: '' },
   { src: '/photos/IMG_3601.JPG', caption: '' },
@@ -24,6 +25,15 @@ const photos: Photo[] = [
   { src: '/photos/IMG_3604.JPG', caption: '' },
   { src: '/photos/IMG_3605.JPG', caption: '' },
   { src: '/photos/IMG_3606.JPG', caption: '' },
+  { src: '/photos/7778.JPG', caption: '' },
+  { src: '/photos/7783.JPG', caption: '' },
+  { src: '/photos/7784.JPG', caption: '' },
+  { src: '/photos/7785.JPG', caption: '' },
+  { src: '/photos/7786.JPG', caption: '' },
+  { src: '/photos/7787.JPG', caption: '' },
+  { src: '/photos/7788.JPG', caption: '' },
+  { src: '/photos/7780.JPG', caption: '' },
+  { src: '/photos/7781.JPG', caption: '' },
 ];
 
 const PhotosPage: React.FC = () => {

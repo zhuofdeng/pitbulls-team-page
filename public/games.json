@@ -35,10 +35,10 @@
         "location": "Breezy Point <1600 Boardwalk>",
         "locationLink": "https://maps.app.goo.gl/6YpW8sk3HFkabQSc6",
         "isHome": false,
-        "result": null,
+        "result": "win",
         "score": {
-            "team": 0,
-            "opponent": 0
+            "team": 10,
+            "opponent": 5
         }
     },
     {
@@ -49,10 +49,10 @@
         "location": "Comer Field",
         "locationLink": "https://maps.app.goo.gl/LGv2DqXwKJrZ1Z4z6",
         "isHome": false,
-        "result": null,
+        "result": "loss",
         "score": {
-            "team": 0,
-            "opponent": 0
+            "team": 5,
+            "opponent": 6
         }
     },
     {
