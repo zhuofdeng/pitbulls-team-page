@@ -104,6 +104,7 @@ const StatsPage: React.FC = () => {
                     <div><strong>K</strong>: Strikeouts</div>
                     <div><strong>RBI</strong>: Runs Batted In</div>
                     <div><strong>BB</strong>: Walks</div>
+                    <div><strong>HBP</strong>: Hit by Pitch</div>
                     <div><strong>AVG</strong>: Batting Average</div>
                     <div><strong>OBP</strong>: On Base Percentage</div>
                   </div>

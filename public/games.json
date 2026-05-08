@@ -63,10 +63,10 @@
         "location": "Larry Veling Field <2901 Gerritsen Ave>",
         "locationLink": "https://maps.app.goo.gl/pZZ9NEVWw2fN6TpF9",
         "isHome": false,
-        "result": null,
+        "result": "win",
         "score": {
-            "team": 0,
-            "opponent": 0
+            "team": 12,
+            "opponent": 2
         }
     },
     {
@@ -77,10 +77,10 @@
         "location": "KB2 field",
         "locationLink": "https://maps.app.goo.gl/n7qMCtS4repBuFXs9",
         "isHome": true,
-        "result": null,
+        "result": "loss",
         "score": {
             "team": 0,
-            "opponent": 0
+            "opponent": 18
         }
     },
     {
