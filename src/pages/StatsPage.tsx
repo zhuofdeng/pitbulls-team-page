@@ -62,7 +62,7 @@ const StatsPage: React.FC = () => {
                     <div className="text-center p-4 bg-primary-50 rounded-lg">
                       <div className="text-gray-500 mb-1">Record</div>
                       <div className="text-3xl font-bold text-primary-800">
-                        {teamStats.wins}-{teamStats.losses}
+                        {teamStats.wins}-{teamStats.losses}-{teamStats.ties}
                       </div>
                       <div className="text-sm text-gray-500">
                         {teamStats.gamesPlayed > 0

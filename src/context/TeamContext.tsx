@@ -107,6 +107,7 @@ export const TeamProvider: React.FC<{ children: React.ReactNode }> = ({ children
       gamesPlayed: games.filter(game => (game.result && game.result !== 'postponed')).length,
       wins: games.filter(game => game.result === 'win').length,
       losses: games.filter(game => game.result === 'loss').length,
+      ties: games.filter(game => game.result === 'tie').length,
       battingAverage: totalAtBats > 0 ? (totalHits / totalAtBats).toFixed(3) : '0.000',
       totalRuns,
       totalHits,

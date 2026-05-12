@@ -22,7 +22,7 @@ const TeamStatsCard: React.FC<TeamStatsCardProps> = ({ stats }) => {
       <div className="grid grid-cols-2 gap-4 mb-6">
         <div className="text-center p-3 bg-primary-50 rounded-lg">
           <div className="text-sm text-gray-600 mb-1">Record</div>
-          <div className="text-xl font-bold text-primary-800">{stats.wins} - {stats.losses}</div>
+          <div className="text-xl font-bold text-primary-800">{stats.wins} - {stats.losses} - {stats.ties}</div>
         </div>
         
         <div className="text-center p-3 bg-primary-50 rounded-lg">

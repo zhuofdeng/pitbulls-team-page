@@ -372,6 +372,7 @@ export const sampleTeamStats: TeamStats = {
   gamesPlayed: 2,
   wins: 0,
   losses: 2,
+  ties: 0,
   battingAverage: '.000',
   totalRuns: 8,
   totalHits: 12,

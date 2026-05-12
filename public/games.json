@@ -91,10 +91,10 @@
         "location": "Breee Point <1600 Boardwalk> Small field",
         "locationLink": "https://maps.app.goo.gl/6YpW8sk3HFkabQSc6",
         "isHome": false,
-        "result": null,
+        "result": "tie",
         "score": {
-            "team": 5,
-            "opponent": 6
+            "team": 9,
+            "opponent": 9
         }
     },
     {

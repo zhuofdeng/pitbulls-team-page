@@ -57,18 +57,13 @@ const GameCard: React.FC<GameCardProps> = ({ game }) => {
         {/* Game Result (if available) */}
         {game.result && game.score && (
           <div className={`mb-4 p-3 rounded-md text-center ${
-            game.result === 'win' ? 'bg-success-100 text-success-800' : 
-            game.result === 'loss' ? 'bg-error-100 text-error-800' : 
+            game.result === 'win' ? 'bg-success-100 text-success-800' :
+            game.result === 'loss' ? 'bg-error-100 text-error-800' :
+            game.result === 'tie' ? 'bg-white border border-gray-300 text-gray-800' :
             'bg-gray-100 text-gray-800'
           }`}>
-
-
-        {/* Game status if it was cancelled/posponed) */}
             {game.result === 'postponed' && (
-              <div className={`mb-4 p-3 rounded-md text-center 'bg-error-100 text-error-800' : 
-                'bg-gray-100 text-gray-800`}>
-                <div className="text-sm mb-1">Postponed/ Rained Out</div>
-              </div>
+              <div className="text-sm">Postponed / Rained Out</div>
             )}
 
             {(game.result === 'win' || game.result === 'loss') && (
@@ -78,8 +73,18 @@ const GameCard: React.FC<GameCardProps> = ({ game }) => {
                   Pitbulls {game.score.team} - {game.score.opponent} {game.opponent}
                 </div>
                 <div className="text-sm mt-1 font-medium">
-                  {game.result === 'win' ? 'Victory!' : game.result === 'loss' ? 'Defeat' : 'Tie Game'}
+                  {game.result === 'win' ? 'Victory!' : 'Defeat'}
                 </div>
+              </div>
+            )}
+
+            {game.result === 'tie' && (
+              <div>
+                <div className="text-sm mb-1">Final Score</div>
+                <div className="text-xl font-bold">
+                  Pitbulls {game.score.team} - {game.score.opponent} {game.opponent}
+                </div>
+                <div className="text-sm mt-1 font-medium">Tied</div>
               </div>
             )}
           </div>

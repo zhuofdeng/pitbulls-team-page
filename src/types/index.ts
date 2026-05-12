@@ -38,6 +38,7 @@ export interface TeamStats {
   gamesPlayed: number;
   wins: number;
   losses: number;
+  ties: number;
   battingAverage: string;
   totalRuns: number;
   totalHits: number;
