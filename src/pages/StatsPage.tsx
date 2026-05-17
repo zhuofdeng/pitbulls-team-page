@@ -65,8 +65,8 @@ const StatsPage: React.FC = () => {
                         {teamStats.wins}-{teamStats.losses}-{teamStats.ties}
                       </div>
                       <div className="text-sm text-gray-500">
-                        {teamStats.gamesPlayed > 0
-                          ? `${((teamStats.wins / teamStats.gamesPlayed) * 100).toFixed(1)}%`
+                        {(teamStats.wins + teamStats.losses) > 0
+                          ? `${((teamStats.wins / (teamStats.wins + teamStats.losses)) * 100).toFixed(1)}%`
                           : '0.0%'}
                       </div>
                     </div>

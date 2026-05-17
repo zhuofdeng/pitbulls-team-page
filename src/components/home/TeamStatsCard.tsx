@@ -8,8 +8,9 @@ interface TeamStatsCardProps {
 }
 
 const TeamStatsCard: React.FC<TeamStatsCardProps> = ({ stats }) => {
-  const calculatedWinPercentage = stats.gamesPlayed > 0 
-    ? ((stats.wins / stats.gamesPlayed) * 100).toFixed(1)
+  const winLossGames = stats.wins + stats.losses;
+  const calculatedWinPercentage = winLossGames > 0
+    ? ((stats.wins / winLossGames) * 100).toFixed(1)
     : '0.0';
     
   return (
