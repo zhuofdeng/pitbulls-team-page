@@ -124,5 +124,47 @@
             "team": 3,
             "opponent": 9
         }
+    },
+    {
+        "id": "10",
+        "date": "2026-05-27",
+        "time": "6:00 PM",
+        "opponent": "SCC Cyclones",
+        "location": "KB1 Field",
+        "locationLink": "https://maps.app.goo.gl/n7qMCtS4repBuFXs9",
+        "isHome": true,
+        "result": "loss",
+        "score": {
+            "team": 2,
+            "opponent": 13
+        }
+    },
+    {
+        "id": "11",
+        "date": "2026-06-04",
+        "time": "6:00 PM",
+        "opponent": "BT Dave",
+        "location": "KB2 Field",
+        "locationLink": "https://maps.app.goo.gl/n7qMCtS4repBuFXs9",
+        "isHome": true,
+        "result": null,
+        "score": {
+            "team": 0,
+            "opponent": 0
+        }
+    },
+    {
+        "id": "12",
+        "date": "2026-06-07",
+        "time": "1:30 PM",
+        "opponent": "KB Cobras",
+        "location": "KB2 Field",
+        "locationLink": "https://maps.app.goo.gl/n7qMCtS4repBuFXs9",
+        "isHome": true,
+        "result": null,
+        "score": {
+            "team": 0,
+            "opponent": 0
+        }
     }
 ]
