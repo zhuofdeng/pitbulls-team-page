@@ -114,11 +114,10 @@ const StatsPage: React.FC = () => {
                   <p className="font-semibold mb-2">Pitching Stats:</p>
                   <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-x-4 gap-y-2">
                     <div><strong>IP</strong>: Innings Pitched</div>
-                    <div><strong>SO</strong>: Strikeouts</div>
+                    <div><strong>K / BB</strong>: Strikeouts / Walks</div>
                     <div><strong>ERA</strong>: Earned Run Average</div>
                     <div><strong>HIT</strong>: Hits Allowed</div>
                     <div><strong>ER</strong>: Earned Runs</div>
-                    <div><strong>WB</strong>: Walked Batter</div>
                   </div>
                 </div>
               </div>

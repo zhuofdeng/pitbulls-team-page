@@ -147,10 +147,10 @@
         "location": "KB2 Field",
         "locationLink": "https://maps.app.goo.gl/n7qMCtS4repBuFXs9",
         "isHome": true,
-        "result": null,
+        "result": "win",
         "score": {
-            "team": 0,
-            "opponent": 0
+            "team": 12,
+            "opponent": 11
         }
     },
     {
@@ -161,6 +161,20 @@
         "location": "KB2 Field",
         "locationLink": "https://maps.app.goo.gl/n7qMCtS4repBuFXs9",
         "isHome": true,
+        "result": "win",
+        "score": {
+            "team": 17,
+            "opponent": 7
+        }
+    },
+    {
+        "id": "13",
+        "date": "2026-06-10",
+        "time": "6:00 PM",
+        "opponent": "Saint Columba Crusaders",
+        "location": "Joe Torre <3802 Avenue U>",
+        "locationLink": "https://maps.app.goo.gl/GxDWkE6AdoS9xHWX7",
+        "isHome": false,
         "result": null,
         "score": {
             "team": 0,
