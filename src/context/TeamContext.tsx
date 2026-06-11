@@ -31,6 +31,7 @@ const fetchGamesData = async (): Promise<Game[]> => {
     location: game.location,
     locationLink: game.locationLink,
     isHome: game.isHome,
+    isPlayoff: game.isPlayoff ?? false,
     result: game.result,
     score: {
       team: game?.score?.team ?? 0,
@@ -103,11 +104,20 @@ export const TeamProvider: React.FC<{ children: React.ReactNode }> = ({ children
     const totalRuns = players.reduce((sum, player) => sum + player.stats.runs, 0);
     const totalRBI = players.reduce((sum, player) => sum + player.stats.rbi, 0);
 
+    const regularSeasonGames = games.filter(game => !game.isPlayoff);
+    const playoffGames = games.filter(game => game.isPlayoff);
+
     setTeamStats({
-      gamesPlayed: games.filter(game => (game.result && game.result !== 'postponed')).length,
-      wins: games.filter(game => game.result === 'win').length,
-      losses: games.filter(game => game.result === 'loss').length,
-      ties: games.filter(game => game.result === 'tie').length,
+      gamesPlayed: regularSeasonGames.filter(game => (game.result && game.result !== 'postponed')).length,
+      wins: regularSeasonGames.filter(game => game.result === 'win').length,
+      losses: regularSeasonGames.filter(game => game.result === 'loss').length,
+      ties: regularSeasonGames.filter(game => game.result === 'tie').length,
+      playoffRecord: {
+        gamesPlayed: playoffGames.filter(game => (game.result && game.result !== 'postponed')).length,
+        wins: playoffGames.filter(game => game.result === 'win').length,
+        losses: playoffGames.filter(game => game.result === 'loss').length,
+        ties: playoffGames.filter(game => game.result === 'tie').length,
+      },
       battingAverage: totalAtBats > 0 ? (totalHits / totalAtBats).toFixed(3) : '0.000',
       totalRuns,
       totalHits,

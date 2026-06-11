@@ -83,6 +83,43 @@ const StatsPage: React.FC = () => {
                     ></div>
                   </div>
                 </div>
+
+                <div className="card p-6">
+                  <div className="flex items-center mb-4">
+                    <Trophy size={24} className="text-primary-600 mr-2" />
+                    <h3 className="heading-sm text-primary-800">Playoff Record</h3>
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-4 mb-4">
+                    <div className="text-center p-4 bg-primary-50 rounded-lg">
+                      <div className="text-gray-500 mb-1">Games Played</div>
+                      <div className="text-3xl font-bold text-primary-800">{teamStats.playoffRecord.gamesPlayed}</div>
+                    </div>
+
+                    <div className="text-center p-4 bg-primary-50 rounded-lg">
+                      <div className="text-gray-500 mb-1">Record</div>
+                      <div className="text-3xl font-bold text-primary-800">
+                        {teamStats.playoffRecord.wins}-{teamStats.playoffRecord.losses}-{teamStats.playoffRecord.ties}
+                      </div>
+                      <div className="text-sm text-gray-500">
+                        {(teamStats.playoffRecord.wins + teamStats.playoffRecord.losses) > 0
+                          ? `${((teamStats.playoffRecord.wins / (teamStats.playoffRecord.wins + teamStats.playoffRecord.losses)) * 100).toFixed(1)}%`
+                          : '0.0%'}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="relative h-4 bg-gray-200 rounded-full overflow-hidden">
+                    <div
+                      className="absolute top-0 left-0 h-full bg-primary-600"
+                      style={{
+                        width: teamStats.playoffRecord.gamesPlayed > 0
+                          ? `${(teamStats.playoffRecord.wins / teamStats.playoffRecord.gamesPlayed) * 100}%`
+                          : '0%'
+                      }}
+                    ></div>
+                  </div>
+                </div>
               </div>
               <h2 className="heading-md text-primary-800 mb-6">Individual Player Statistics</h2>
 

@@ -11,7 +11,8 @@
         "score": {
             "team": 3,
             "opponent": 4
-        }
+        },
+        "isPlayoff": false
     },
     {
         "id": "2",
@@ -25,7 +26,8 @@
         "score": {
             "team": 11,
             "opponent": 7
-        }
+        },
+        "isPlayoff": false
     },
     {
         "id": "3",
@@ -39,7 +41,8 @@
         "score": {
             "team": 10,
             "opponent": 5
-        }
+        },
+        "isPlayoff": false
     },
     {
         "id": "4",
@@ -53,7 +56,8 @@
         "score": {
             "team": 5,
             "opponent": 6
-        }
+        },
+        "isPlayoff": false
     },
     {
         "id": "5",
@@ -67,7 +71,8 @@
         "score": {
             "team": 12,
             "opponent": 2
-        }
+        },
+        "isPlayoff": false
     },
     {
         "id": "6",
@@ -81,7 +86,8 @@
         "score": {
             "team": 0,
             "opponent": 18
-        }
+        },
+        "isPlayoff": false
     },
     {
         "id": "7",
@@ -95,7 +101,8 @@
         "score": {
             "team": 9,
             "opponent": 9
-        }
+        },
+        "isPlayoff": false
     },
     {
         "id": "8",
@@ -109,7 +116,8 @@
         "score": {
             "team": 7,
             "opponent": 6
-        }
+        },
+        "isPlayoff": false
     },
     {
         "id": "9",
@@ -123,7 +131,8 @@
         "score": {
             "team": 3,
             "opponent": 9
-        }
+        },
+        "isPlayoff": false
     },
     {
         "id": "10",
@@ -137,7 +146,8 @@
         "score": {
             "team": 2,
             "opponent": 13
-        }
+        },
+        "isPlayoff": false
     },
     {
         "id": "11",
@@ -151,7 +161,8 @@
         "score": {
             "team": 12,
             "opponent": 11
-        }
+        },
+        "isPlayoff": false
     },
     {
         "id": "12",
@@ -165,7 +176,8 @@
         "score": {
             "team": 17,
             "opponent": 7
-        }
+        },
+        "isPlayoff": false
     },
     {
         "id": "13",
@@ -175,10 +187,11 @@
         "location": "Joe Torre <3802 Avenue U>",
         "locationLink": "https://maps.app.goo.gl/GxDWkE6AdoS9xHWX7",
         "isHome": false,
-        "result": null,
+        "result": "loss",
         "score": {
-            "team": 0,
-            "opponent": 0
-        }
+            "team": 1,
+            "opponent": 13
+        },
+        "isPlayoff": true
     }
 ]

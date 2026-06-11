@@ -6,6 +6,7 @@ export interface Game {
   location: string;
   locationLink?: string;
   isHome: boolean;
+  isPlayoff?: boolean;
   result?: 'win' | 'loss' | 'tie' | 'postponed' | null;
   score?: {
     team: number;
@@ -34,11 +35,15 @@ export interface Player {
   stats: PlayerStats;
 }
 
-export interface TeamStats {
+export interface TeamRecord {
   gamesPlayed: number;
   wins: number;
   losses: number;
   ties: number;
+}
+
+export interface TeamStats extends TeamRecord {
+  playoffRecord: TeamRecord;
   battingAverage: string;
   totalRuns: number;
   totalHits: number;
