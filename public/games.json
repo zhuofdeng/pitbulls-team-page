@@ -193,5 +193,20 @@
             "opponent": 13
         },
         "isPlayoff": true
+    },
+    {
+        "id": "14",
+        "date": "2026-06-15",
+        "time": "6:00 PM",
+        "opponent": "BT Jimmy",
+        "location": "Breee Point <1600 Boardwalk> Small field",
+        "locationLink": "https://maps.app.goo.gl/6YpW8sk3HFkabQSc6",
+        "isHome": false,
+        "result": null,
+        "score": {
+            "team": 0,
+            "opponent": 0
+        },
+        "isPlayoff": true
     }
 ]
